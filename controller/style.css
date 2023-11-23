@@ -1,36 +1,282 @@
-.controller.ds4.white {
-  background-image: url(ps4-white-assets/base.png);
+.controller.ds4 {
+  background: url(https://cdn.discordapp.com/attachments/542792066762276905/1177268281015537726/base.png?ex=6571e386&is=655f6e86&hm=9eb1fbd104e34c131f1f158f3e185b69a9cb0ce831a40be2f57622580a1e7862&);
+  height: 598px;
+  width: 806px;
+  /*margin-left: -403px;
+    margin-top: -280px;*/
 }
 
-.ds4.white.disconnected {
-  background: url(ps4-assets/disconnected.png);
+.ds4.disconnected {
+  background: url(https://cdn.discordapp.com/attachments/542792066762276905/1177268291761340497/disconnected.png?ex=6571e389&is=655f6e89&hm=1d85729d324c4dc94cc86f8d682f6ce11687b66fb94a2832be3637a0dd6577ce&);
 }
 
-.ds4.white .trigger {
-  background-image: url(ps4-white-assets/triggers.png);
+.ds4.disconnected div {
+  display: none;
 }
 
-.ds4.white .bumper {
-  background-image: url(ps4-white-assets/bumper.png);
+.ds4 .triggers {
+  width: 588px;
+  height: 90px;
+  position: absolute;
+  left: 109px;
 }
 
-.ds4.white .touchpad.pressed {
-  background-image: url(ps4-white-assets/touchpad.png);
+.ds4 .trigger {
+  width: 99px;
+  height: 100%;
+  background: url(https://cdn.discordapp.com/attachments/542792066762276905/1177268332496441475/triggers.png?ex=6571e393&is=655f6e93&hm=d00849b4b30b0ecdba3a7df3b1eb6da309c0e8f4b14c1d1373326b90be1c5211&);
+  opacity: 0;
 }
 
-.ds4.white .back,
+.ds4 .trigger.left {
+  float: left;
+}
+
+.ds4 .trigger.right {
+  float: right;
+  background-position-x: 99px;
+}
+
+.ds4 .bumper {
+  width: 99px;
+  height: 23px;
+  background: url(https://cdn.discordapp.com/attachments/542792066762276905/1177268283058167808/bumpers.png?ex=6571e387&is=655f6e87&hm=bba5f18d20574ac65b093ae4c4ba05b0182a03fec197de65f1f74f8ecc541fa3&)
+    no-repeat;
+  opacity: 0;
+}
+
+.ds4 .bumpers {
+  position: absolute;
+  width: 588px;
+  height: 23px;
+  left: 109px;
+  top: 94px;
+}
+
+.ds4 .bumper.pressed {
+  opacity: 1;
+}
+
+.ds4 .bumper.left {
+  /* -webkit-transform: rotateY(180deg); */
+  /* transform: rotateY(180deg); */
+  float: left;
+}
+
+.ds4 .bumper.right {
+  float: right;
+  transform: rotateY(180deg);
+}
+
+.ds4 .touchpad {
+  width: 262px;
+  height: 151px;
+  position: absolute;
+  left: 272px;
+  top: 122px;
+}
+
+.ds4 .touchpad.pressed {
+  background: url(https://cdn.discordapp.com/attachments/542792066762276905/1177269061818794014/touchpad.png?ex=6571e440&is=655f6f40&hm=adb25c446c13542ff0bd364f64c19216c3f12fb704c8177b02510b05e67fce3a&)
+    no-repeat center;
+}
+
+.ds4 .meta {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  left: 382px;
+  bottom: 216px;
+}
+
+.ds4 .meta.pressed {
+  background: url(ps4-assets/meta.svg) no-repeat center;
+}
+
+/*Not needed, but I like keeping them here for posterity*/
+/*.ds4 .quadrant{
+position: absolute;
+background: url(ps4-assets/player-n.svg);
+height: 17px;
+width: 111px;
+top: 140px;
+left: 240px;
+}
+.ds4 .p0{
+background-position: 0 -6px;
+}
+.ds4 .p1{
+background-position: 0 -28px;
+}
+.ds4 .p2{
+background-position: 0 -49px;
+}
+.ds4 .p3{
+background-position: 0 -70px;
+}*/
+.ds4 .arrows {
+  position: absolute;
+  width: 352px;
+  height: 46px;
+  top: 142px;
+  left: 227px;
+}
+
+.ds4 .back,
 .ds4 .start {
-  background-image: url(ps4-white-assets/start.png);
+  background: url(https://cdn.discordapp.com/attachments/542792066762276905/1177268324124598333/start.png?ex=6571e391&is=655f6e91&hm=307c65cb4d704c6ce636978887da2d5d6390bba74f615b6964cd549f369c7c6f&);
+  width: 28px;
+  height: 46px;
+  opacity: 0;
 }
 
-.ds4.white .button {
-  background-image: url(ps4-white-assets/face.png);
+.ds4 .back.pressed,
+.ds4 .start.pressed {
+  /* background-position-y: -21px; */
+  /* margin-top: 2px; */
+  opacity: 1;
 }
 
-.ds4.white .stick {
-  background-image: url(ps4-white-assets/sticks.png);
+.ds4 .back {
+  float: left;
+  /* width: 28px; */
 }
 
-.ds4.white .face {
-  background-image: url(ps4-white-assets/dpad.png);
+.ds4 .start {
+  float: right;
+  /* width: 28px; */
+  background-position: 28px 0;
+}
+
+.ds4 .abxy {
+  position: absolute;
+  width: 170px;
+  height: 171px;
+  top: 159px;
+  left: 567px;
+}
+
+.ds4 .button {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  background: url(https://cdn.discordapp.com/attachments/542792066762276905/1177268309251596308/face.png?ex=6571e38d&is=655f6e8d&hm=99fd9defdbd15f3c4ccc10a7d02a26c5f93e1bfffdc689bcb2b30fddc22bface&);
+}
+
+.ds4 .button.pressed {
+  background-position-y: 55px;
+  /* margin-top: 5px; */
+}
+
+.ds4 .a {
+  background-position: 0 0;
+  bottom: 0;
+  left: 58px;
+}
+
+.ds4 .b {
+  background-position: -57px 0;
+  top: 58px;
+  right: 0px;
+}
+
+.ds4 .x {
+  background-position: -113px 0;
+  top: 58px;
+}
+
+.ds4 .y {
+  background-position: 55px 0;
+  left: 58px;
+}
+
+.ds4 .sticks {
+  position: absolute;
+  width: 361px;
+  height: 105px;
+  top: 308px;
+  left: 228px;
+}
+
+.ds4 .stick {
+  position: absolute;
+  background: url(https://cdn.discordapp.com/attachments/542792066762276905/1177268343296757760/sticks.png?ex=6571e395&is=655f6e95&hm=aa0de31b837ab4321742291969fe7d89962e1ce8da9b159b49d7ce0b9684385d&);
+  height: 94px;
+  width: 94px;
+}
+
+.ds4 .stick.pressed.left {
+  background-position-x: -96px;
+}
+
+.ds4 .stick.pressed.right {
+  background-position-x: -192px;
+}
+
+.ds4 .stick.left {
+  top: 0;
+  left: 0;
+}
+
+.ds4 .stick.right {
+  top: calc(100% - 105px);
+  left: calc(100% - 105px);
+}
+
+.ds4 .dpad {
+  position: absolute;
+  width: 125px;
+  height: 126px;
+  top: 181px;
+  left: 92px;
+}
+
+.ds4 .face {
+  background: url(https://cdn.discordapp.com/attachments/542792066762276905/1177268298178641920/dpad.png?ex=6571e38a&is=655f6e8a&hm=65c45f79c72207a58e43c937b812eb5f12933743044fa83ce0563906dac9f86d&);
+  position: absolute;
+}
+
+.ds4 .face.up,
+.ds4 .face.down {
+  width: 36px;
+  height: 52px;
+}
+
+.ds4 .face.left,
+.ds4 .face.right {
+  width: 52px;
+  height: 36px;
+}
+
+.ds4 .face.up {
+  left: 44px;
+  top: 0;
+  background-position: -37px 0px;
+}
+
+.ds4 .face.down {
+  left: 44px;
+  bottom: 0;
+  background-position: 0px 0;
+}
+
+.ds4 .face.left {
+  top: 45px;
+  left: 0;
+  background-position: 104px 0;
+}
+
+.ds4 .face.right {
+  top: 45px;
+  right: 0px;
+  background-position: 52px 0;
+}
+
+.ds4 .face.pressed {
+  /* margin-top: 5px; */
+  background-position-y: 52px;
+}
+
+.ds4.half {
+  margin-top: -300px;
 }
