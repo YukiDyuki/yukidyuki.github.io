@@ -1,1 +1,0 @@
-# yukidyuki.github.io
