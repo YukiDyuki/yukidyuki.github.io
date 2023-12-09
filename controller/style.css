@@ -1,5 +1,5 @@
 .controller.ds4 {
-  background: url(https://cdn.discordapp.com/attachments/542792066762276905/1177268281015537726/base.png?ex=6571e386&is=655f6e86&hm=9eb1fbd104e34c131f1f158f3e185b69a9cb0ce831a40be2f57622580a1e7862&);
+  background: url(https://cdn.discordapp.com/attachments/542792066762276905/1183036446739796008/base.png?ex=6586df8c&is=65746a8c&hm=b944a84191e5d4de0cba3b81cc407e8ef0b78c2ddd5db3f38044b55535e45a79&);
   height: 598px;
   width: 806px;
   /*margin-left: -403px;
@@ -232,7 +232,7 @@ background-position: 0 -70px;
 }
 
 .ds4 .face {
-  background: url(https://cdn.discordapp.com/attachments/542792066762276905/1177268298178641920/dpad.png?ex=6571e38a&is=655f6e8a&hm=65c45f79c72207a58e43c937b812eb5f12933743044fa83ce0563906dac9f86d&);
+  background: url(https://cdn.discordapp.com/attachments/542792066762276905/1183036457439469599/face.png?ex=6586df8f&is=65746a8f&hm=77bc964f496f37b54a454d1917666d40438669cc7ffe07408884855d404e902a&);
   position: absolute;
 }
 
